@@ -79,11 +79,10 @@
     // Initial load
     loadChart(symbols[currentIndex]);
 
-    // Rotate every 15 seconds
     setInterval(() => {
       currentIndex = (currentIndex + 1) % symbols.length;
       loadChart(symbols[currentIndex]);
-    }, 6000);
+    }, 10000);
   </script>
 </body>
 </html>
