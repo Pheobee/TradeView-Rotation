@@ -84,7 +84,7 @@
         autosize: true,
         symbol: symbol,
         interval: "1",
-        timezone: "Etc/UTC",
+        timezone: "exchange",     // aligns with regular market hours
         theme: "dark",
         style: "1",
         locale: "en",
@@ -97,7 +97,9 @@
         studies: ["RSI@tv-basicstudies"],
         fullscreen: false,
         withdateranges: true,
+        range: "1D"                // limits visible chart range
       });
+
 
       console.log("Loaded:", symbol);
     }
